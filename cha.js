@@ -18,13 +18,13 @@ const hitboxScale = 0.8; // 80% of the image size for hitbox
 
 // Images
 const boatImage = new Image();
-boatImage.src = '/assets/images/boat.png';
+boatImage.src = 'assets/images/boat.png';
 
 const trashImage = new Image();
-trashImage.src = '/assets/images/trash.png';
+trashImage.src = 'assets/images/trash.png';
 
 const backgroundImage = new Image();
-backgroundImage.src = '/assets/images/background.jpg'; // Image de fond
+backgroundImage.src = 'assets/images/background.jpg'; // Image de fond
 
 // Positions
 const player = { x: 0, y: canvas.height / 2 - boatHeight / 2 };
