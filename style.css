@@ -2,88 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body, html {
+body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-  }
+}
   
-  .landing-container {
+.landing-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background:url(https://my.spline.design/ocean-dde5e06f3f68c85c3c3b9f8d771fd827/) repeat-x;
-    /*#f0f8ff;*/
     position: relative;
-  }
+}
   
-  /* best seen at 1500px or less*/
+/* background settings for Spline 3D */
+html, body {
+    height: 100%;
+    overflow: hidden;  /* Prevent scrolling */
+}
 
-  html, body { height: 100%; }
-  body {
-    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-    overflow: hidden;
-  }
+body {
+    background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+}
   
-  .ocean { 
+.ocean { 
     height: 5%;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
-    background: #015871;
-  }
-  
-  .wave {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    width: 100%;
     position: absolute;
-    top: -198px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-  }
+    bottom: 0;
+    left: 0;
+    background: #015871;
+}
   
-  .wave:nth-of-type(2) {
-    top: -175px;
-    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
-  }
-  
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-  }
-  
-  @keyframes swell {
-    0%, 100% {
-      transform: translate3d(0,-25px,0);
-    }
-    50% {
-      transform: translate3d(0,5px,0);
-    }
-  }
-  
-  .content {
+.content {
     text-align: center;
     z-index: 10;
     color: #333;
     padding: 20px;
-  }
+}
   
-  h1 {
+h1 {
     font-size: 2.5em;
     color: #1e3d58;
-  }
+}
   
-  button {
+button {
     padding: 15px 30px;
     background-color: #1e3d58;
     color: white;
@@ -91,8 +57,13 @@
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+    
+    position: absolute; /* positionner le bouton par rapport à son conteneur */
+    bottom: 25%; /* Positionner le bouton à 25% de la hauteur de l'écran */
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster la position pour qu'il soit parfaitement centré */
+}
   
-  button:hover {
+button:hover {
     background-color: #2b5573;
-  }
+}
