@@ -1,0 +1,43 @@
+/* presentation.css */
+.presentation-container {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .interactive-elements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #1e3d58;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .item:hover {
+    transform: scale(1.1);
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .audio-container {
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
