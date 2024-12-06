@@ -1,15 +1,19 @@
 /* presentation.css */
 body {
   background-color: #97cfff;
+  margin: 0;
+  padding:0;
 }
 
-section svg{
-  position:absolute;
-  bottom:0;
+section svg, svg {
+  margin: 0;
+  padding: 0;
+  display: block; /* Élimine l'espace blanc généré par le SVG en tant qu'élément inline */
+  position: relative; /* S'assure que l'élément respecte les règles de son conteneur */
 }
 
 .presentation-container {
-    padding: 30px;
+    padding: none;
     text-align: center;
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -42,7 +46,7 @@ section svg{
   }
   
   .audio-container {
-    margin-top: 30px;
+    background-color:#0099ff;
   }
   
   button {
@@ -54,3 +58,17 @@ section svg{
     margin-top: 20px;
   }
   
+  .vague2{
+    background-color: #0099ff;
+  }
+
+  h2{
+    margin-top: 0;
+    border-top: 0;
+  }
+
+  .audio-container button {
+    display: block; /* S'assure que le bouton occupe toute la largeur disponible */
+    margin: 20px auto; /* Centrer horizontalement et ajouter un espace au-dessus */
+    margin-bottom: 0;
+  }
