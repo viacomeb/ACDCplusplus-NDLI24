@@ -28,7 +28,7 @@ section svg, svg {
   .item {
     margin: 20px;
     padding: 10px;
-    border: 2px solid #1e3d58;
+    border: 1px solid #1e3d58;
     width: 150px;
     cursor: pointer;
     transition: transform 0.3s;

@@ -68,3 +68,12 @@ button {
 button:hover {
     background-color: #2b5573;
 }
+
+.seagull {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: url('assets/images/seagull.png') no-repeat center/contain;
+    z-index: 100;
+    pointer-events: none; /* Ensure the seagull is not interactive */
+}
