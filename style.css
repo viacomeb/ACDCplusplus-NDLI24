@@ -51,6 +51,7 @@ h1 {
   
 button {
     padding: 15px 30px;
+    border-radius: 20px;
     background-color: #1e3d58;
     color: white;
     border: none;
@@ -59,7 +60,7 @@ button {
     transition: background-color 0.3s ease;
     
     position: absolute; /* positionner le bouton par rapport à son conteneur */
-    bottom: 25%; /* Positionner le bouton à 25% de la hauteur de l'écran */
+    bottom: 20%; /* Positionner le bouton à 25% de la hauteur de l'écran */
     left: 50%; /* Centrer horizontalement */
     transform: translateX(-50%); /* Ajuster la position pour qu'il soit parfaitement centré */
 }
