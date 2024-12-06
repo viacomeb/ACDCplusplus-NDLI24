@@ -12,17 +12,16 @@ function createSeagull() {
 
     document.body.appendChild(seagull);
 
-    // Animate the seagull
-    const speed = Math.random() * 5 + 5; // Random speed between 5s and 10s
-    const targetX = window.innerWidth + 150; // Move offscreen (right)
+    // Random speed: lower values move faster
+    const speed = Math.random() * 2 + 1; // Random speed multiplier between 1 and 3
 
     // Animate using requestAnimationFrame
     let currentX = -150;
     function animate() {
-        currentX += 2; // Adjust speed increment
+        currentX += speed; // Move the seagull based on the speed
         seagull.style.left = `${currentX}px`;
 
-        if (currentX < targetX) {
+        if (currentX < window.innerWidth + 150) {
             requestAnimationFrame(animate);
         } else {
             seagull.remove(); // Remove seagull when it exits the screen
