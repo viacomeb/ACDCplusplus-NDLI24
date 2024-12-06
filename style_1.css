@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e0f7fa; /* Un bleu clair rappelant l'eau */
+    color: #003366; /* Un bleu profond pour le texte */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0077b6, #00b4d8); /* Un dégradé bleu évoquant l'océan */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro, .ocean-facts, .conservation {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #006994; /* Un bleu plus foncé pour les titres */
+}
+
+.ocean-facts .fact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.ocean-facts .fact img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.ocean-facts .fact-text {
+    max-width: 600px;
+}
+
+.ocean-facts .fact-text h3 {
+    font-size: 1.6rem;
+    color: #008ba3; /* Bleu-vert inspiré de l'océan */
+    margin-bottom: 10px;
+}
+
+.ocean-facts .fact-text p {
+    font-size: 1rem;
+    color: #004d61; /* Bleu marine pour plus de contraste */
+}
+
+.conservation button {
+    background-color: #00b4d8; /* Bleu clair */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.conservation button:hover {
+    background-color: #0077b6; /* Un bleu un peu plus foncé pour l'effet au survol */
+}
+
+footer {
+    background-color: #004d61; /* Bleu marine pour le pied de page */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+#instruction {
+    font-size: 24px;
+    color: #00b4d8; /* Bleu océan clair pour la consigne */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}

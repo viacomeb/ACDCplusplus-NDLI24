@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1a2d40; /* Fond sombre inspiré de l'océan */
+    color: #f4f4f4; /* Texte clair pour contraster avec le fond sombre */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #004b6e, #00aaff); /* Dégradé inspiré de l'océan profond et de l'eau claire */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid #00aaff; /* Bordure nette pour un look moderne */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro, .parallel, .conservation {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00aaff; /* Accent bleu clair pour faire ressortir les titres */
+}
+
+.parallel .fact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3a5a6f; /* Légère bordure pour séparer les sections */
+    padding-bottom: 20px;
+}
+
+.parallel .fact img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère pour les images */
+}
+
+.parallel .fact-text {
+    max-width: 650px;
+    text-align: left;
+}
+
+.parallel .fact-text h3 {
+    font-size: 1.6rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.parallel .fact-text p {
+    font-size: 1.1rem;
+    color: #d1e6f0;
+}
+
+.conservation button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 30px; /* Bordures arrondies pour un look moderne */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.conservation button:hover {
+    background-color: #007c99; /* Bleu plus foncé au survol */
+    transform: scale(1.05); /* Agrandissement au survol pour effet interactif */
+}
+
+footer {
+    background-color: #003b4d; /* Fond bleu foncé pour footer */
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
