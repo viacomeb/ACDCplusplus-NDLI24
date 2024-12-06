@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #4682B4);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#instruction {
+  font-size: 24px;
+  color: rgb(0, 234, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+canvas {
+  border: 2px solid white;
+  background: #1E3C72;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#captchaResult {
+  margin-top: 20px;
+  font-size: 24px;
+  color: limegreen;
+  text-shadow: 1px 1px 2px black;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#validateButton,
+#continueButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+#validateButton:hover,
+#continueButton:hover {
+  background-color: #0056b3;
+}
+
+#validateButton:focus,
+#continueButton:focus {
+  outline: none;
+}

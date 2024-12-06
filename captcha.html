@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clean the River CAPTCHA - A fun interactive game for CAPTCHA verification.">
+  <title>Clean the River CAPTCHA</title>
+  <link rel="stylesheet" href="style_cha.css">
+</head>
+<body>
+  <div id="instruction">🎮 Récupère 10 déchets dans l'océan à l'aide de notre bateau IA (controle le bateau de gauche avec 'z' et 's' )🌍</div> <!-- Consigne affichée ici -->
+  <canvas id="gameCanvas" aria-label="Game canvas for Clean the River"></canvas>
+  <div id="captchaResult" class="hidden">
+    🎉 Great Job! CAPTCHA Passed! 🎉
+    <button id="restartButton" class="hidden">Restart</button>
+    <button id="validateButton" class="hidden">Validate</button> <!-- Nouveau bouton Valider -->
+    <button id="continueButton" class="hidden">Continue</button> <!-- Nouveau bouton Continuer -->
+  </div>
+  <script src="cha.js"></script>
+</body>
+</html>
