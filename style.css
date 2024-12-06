@@ -9,14 +9,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
   
-.landing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-}
+
   
 /* background settings for Spline 3D */
 html, body {
@@ -36,44 +29,53 @@ body {
     left: 0;
     background: #015871;
 }
-  
-.content {
-    text-align: center;
-    z-index: 10;
-    color: #333;
-    padding: 20px;
-}
-  
+
 h1 {
-    font-size: 2.5em;
-    color: #1e3d58;
+  text-align: center;
+  font-size: 2.5em;
+  color: #1e3d58;
+  margin-bottom: 50px; /* Ajoute de l'espace sous le titre */
 }
   
+.landing-container {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center;    /* Centre les éléments horizontalement */
+  justify-content: flex-end; /* Place les éléments en haut de la page */
+  height: 100vh;          /* Hauteur de la fenêtre */
+  padding-bottom: 50px;      /* Ajoute un espace au-dessus du contenu */
+}
+
+.content, .captcha {
+  margin: 10px 0; /* Espacement vertical entre les boutons */
+  text-align: center;
+}
+
 button {
-    padding: 15px 30px;
-    border-radius: 20px;
-    background-color: #1e3d58;
-    color: white;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-    position: absolute; /* positionner le bouton par rapport à son conteneur */
-    bottom: 20%; /* Positionner le bouton à 25% de la hauteur de l'écran */
-    left: 50%; /* Centrer horizontalement */
-    transform: translateX(-50%); /* Ajuster la position pour qu'il soit parfaitement centré */
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: #1e3d58;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-  
+
 button:hover {
-    background-color: #2b5573;
+  background-color: #2b5573;
 }
 
 .seagull {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background: url('assets/images/seagull.png') no-repeat center/contain;
-    z-index: 100;
-    pointer-events: none; /* Ensure the seagull is not interactive */
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: url('assets/images/seagull.png') no-repeat center/contain;
+  z-index: 100;
+  pointer-events: none; /* Assure que la mouette n'est pas interactive */
+}
+
+/* Ajustement pour le viewer Spline si nécessaire */
+spline-viewer {
+  z-index: -1;
 }
