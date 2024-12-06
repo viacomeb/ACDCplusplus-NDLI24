@@ -21,9 +21,8 @@ section svg, svg {
   
   .interactive-elements {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    
   }
   
   .item {
@@ -33,6 +32,7 @@ section svg, svg {
     width: 150px;
     cursor: pointer;
     transition: transform 0.3s;
+    border-radius: 15%;
     
   }
   
@@ -71,4 +71,13 @@ section svg, svg {
     display: block; /* S'assure que le bouton occupe toute la largeur disponible */
     margin: 20px auto; /* Centrer horizontalement et ajouter un espace au-dessus */
     margin-bottom: 0;
+  }
+
+  .titre{
+    background-color: rgb(227, 176, 114);
+    padding: 12px;
+  }
+
+  h1{
+    font-family:sans-serif;
   }
