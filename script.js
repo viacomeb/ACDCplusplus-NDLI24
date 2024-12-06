@@ -34,7 +34,7 @@ function createSeagull() {
 // Function to spawn seagulls periodically
 function startSeagullSpawner() {
     createSeagull(); // Create the first seagull immediately
-    setInterval(createSeagull, 2000); // Then spawn a new seagull every 2 seconds
+    setInterval(createSeagull, 5000); // Then spawn a new seagull every 2 seconds
 }
 
 // Start seagull spawning after the page loads
