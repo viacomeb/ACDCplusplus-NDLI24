@@ -1,13 +1,25 @@
 /* presentation.css */
+body {
+  background-color: #97cfff;
+}
+
+section svg{
+  position:absolute;
+  bottom:0;
+}
+
 .presentation-container {
     padding: 30px;
     text-align: center;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .interactive-elements {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
   }
   
   .item {
@@ -17,6 +29,7 @@
     width: 150px;
     cursor: pointer;
     transition: transform 0.3s;
+    
   }
   
   .item:hover {
